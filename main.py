@@ -82,7 +82,6 @@ def main():
     print("Running DSA attack......")
     run_attack_and_evaluate(attack, model_list, input_dir, output_dir, device=device,batch_size=batch_size, img_size=img_size)
 
-# 像素合法值定义
 img_min = 0.0
 img_max = 1.0
 print(f"GPU counts: {torch.cuda.device_count()}")
