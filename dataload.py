@@ -38,9 +38,9 @@ class AdvDataset(Dataset):
 
     def load_labels(self, csv_path):
         if self.mode == 'train':
-            dev = pd.read_csv(csv_path)  # 读取CSV文件
+            dev = pd.read_csv(csv_path)
         else:
-            dev = pd.read_csv('.csv')  # 读取CSV文件
+            dev = pd.read_csv('.csv')
         f2l = {}
         if self.targeted:
             for _, row in dev.iterrows():
