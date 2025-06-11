@@ -82,7 +82,6 @@ class DSA:
             raise Exception(f"Unsupported loss {loss}")
 
     def init_delta(self, data):
-        """初始化扰动 delta"""
         delta = torch.zeros_like(data).to(self.device)
         if self.random_start:
             if self.norm == 'linfty':
