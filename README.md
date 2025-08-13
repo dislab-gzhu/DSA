@@ -3,10 +3,12 @@ This is pytorch repository of "DSA: Dual-scale Stochastic Augmentation for Boost
 
 Note that,  core functions will be updated once the paper has been accepted for publication.
 
-# Create a conda environment
-conda create -n DSA python=3.10 -y
+# Adversarial Process
+1: download data into 'input_dir',
 
-# Install an appropriate version of PyTorch
-conda activate DSA
-conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
+2: download the pre-trained models' checkpoints to 'model_path',
+
+3: run main.py to generate adversaial examples
+
+5: evaluate the generated samples in the 'output_dir' folder
 
